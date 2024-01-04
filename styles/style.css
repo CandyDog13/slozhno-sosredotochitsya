@@ -218,7 +218,8 @@ img {
   color: var(--heading-color);
   text-shadow: 2px 2px 0px var(--accent-color);
   font-family: var(--main-font, sans-serif);
-  font-size: 116px;
+  /* font-size: 116px; */
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; /* 95.7px */
@@ -339,6 +340,7 @@ img {
     "pic_sunset pic_sunset pic_ice-cream"
     "pic_tape pic_books pic_ice-cream"
     "pic_tape pic_street pic_street";
+    gap: 20px;
   }
 
   .pics_title {
@@ -367,6 +369,10 @@ img {
 
   .pic_street {
     grid-area: pic_street;
+  }
+
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
