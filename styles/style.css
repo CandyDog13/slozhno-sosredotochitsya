@@ -225,10 +225,10 @@ img {
 }
 
 @media (768px <= width) {
-  /* .page {
+  .page {
     gap: 60px;
   }
-   */
+
   .header {
     display: grid;
     grid-template-rows: 1fr min-content 1fr ;
@@ -238,6 +238,16 @@ img {
     "title title"
     ". text";
     padding: 20px;
+  }
+
+  decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+  
+  .decorated-zone::after {
+    left: 20px;
+    bottom: 20px;
   }
 
   .header__theme-menu {
