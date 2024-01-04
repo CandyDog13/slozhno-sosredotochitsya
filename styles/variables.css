@@ -13,4 +13,6 @@
   --rec: block;
   --buttons-color: #ff0070;
   --buttons-color-hover:rgba(255, 0, 112, 0.40);
+  --decor-color: #ff0070;
+  --labels-section-color: #ff0070;
 }

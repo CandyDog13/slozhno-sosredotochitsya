@@ -9,18 +9,17 @@
   :root {
         /* Дублируем переменные светлой темы */
         --accent-color: #ff8dcb;
-        --text-color: #000028;
+        --text-color: #353430;
         --heading-color: #FFC2E6; 
-        --title-color: #000028;
+        --title-color: #353430;
         --bg-image: url(../images/cover-image-light.png);
         --bg-color: #FFF1F7;
         --rec: none;
         --buttons-color: #353430;
-        --buttons-color-hover: rgba(50, 49, 45, 0.40);  
+        --buttons-color-hover: rgba(50, 49, 45, 0.40);
+        --decor-color: #353430;
+        --labels-section-color: #353430;  
     }
-    /* .header__rec-text {
-      display: none;
-    } */
 }
 
 .page.theme_light {
@@ -29,12 +28,14 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #ff8dcb;
-  --text-color: #000028;
+  --text-color: #353430;
   --heading-color: #FFC2E6; 
-  --title-color: #000028;
+  --title-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
   --bg-color: #FFF1F7;
   --rec: none;
   --buttons-color: #353430;
   --buttons-color-hover: rgba(50, 49, 45, 0.40);
+  --decor-color: #353430;
+  --labels-section-color: #353430;  
 }
