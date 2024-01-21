@@ -17,7 +17,8 @@
     --buttons-color: #353430;
     --buttons-color-hover: rgba(50, 49, 45, 0.40);
     --decor-color: #353430;
-    --labels-section-color: #353430;  
+    --labels-section-color: #353430;
+    --focus-color-link: #353430;  
   }
 }
 
@@ -36,5 +37,6 @@
   --buttons-color: #353430;
   --buttons-color-hover: rgba(50, 49, 45, 0.40);
   --decor-color: #353430;
-  --labels-section-color: #353430;  
+  --labels-section-color: #353430; 
+  --focus-color-link: #353430;   
 }
