@@ -181,6 +181,7 @@ section {
   line-height: 23.4px; /* 130% */
 }
 
+
 .margin-block-start {
   margin-block-start: 50px;
 }
@@ -189,6 +190,12 @@ section {
  display: flex;
  flex-direction: column;
  gap: 10px;
+}
+
+.big-width {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .text-paragraph {
@@ -323,6 +330,13 @@ img {
     grid-row-start: span 2;
   }
 
+  .big-width {
+    grid-row:2;
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
   .section-advices .row-text:nth-child(n) {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -386,10 +400,6 @@ img {
   }
 
   .big-width {
-    grid-row:2;
-    grid-column: span 3;
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
   }
 }
