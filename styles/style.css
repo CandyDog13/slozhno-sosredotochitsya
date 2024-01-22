@@ -73,7 +73,7 @@ a:focus-visible {
   color: var(--decor-color);
   text-transform: uppercase;
   text-align: center;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -113,7 +113,7 @@ a:focus-visible {
   background-color: inherit;
   text-transform: lowercase;
   text-align: center;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -141,7 +141,7 @@ a:focus-visible {
 .header__title {
   color: var(--heading-color);
   text-shadow: 4px 4px 0 var(--accent-color);
-  font-family:  var(--main-font, sans-serif);
+  font-family:  var(--main-font, monospace);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: 700;
@@ -152,7 +152,7 @@ a:focus-visible {
   display: inline-block;
   inline-size: 100%;
   align-self: center;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -174,7 +174,7 @@ section {
 
 .content_labels-of-section {
   color: var(--labels-section-color);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -200,7 +200,7 @@ section {
 
 .text-paragraph {
   color: var(--text-color);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -209,7 +209,7 @@ section {
 
 .title-text-bold {
   font-size: 18px;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
@@ -217,7 +217,7 @@ section {
 
 .title-text-no-bold {
   font-size: 18px;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px; /* 130% */
@@ -230,6 +230,14 @@ img {
 
 .section_pics {
   gap: 10px;
+}
+
+.pics_title {
+font-family: var(--main-font, monospace);
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 23.4px; /* 130% */
 }
 
 .footer {
@@ -245,7 +253,7 @@ img {
 .footer__title {
   color: var(--heading-color);
   text-shadow: 2px 2px 0px var(--accent-color);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   /* font-size: 116px; */
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
@@ -267,6 +275,10 @@ img {
     padding: 20px;
   }
 
+  .header__rec-text {
+    top: 19px;
+    right: 29px;
+  }
   .decorated-zone::before {
     top: 20px;
     right: 20px;
@@ -297,7 +309,8 @@ img {
   section {
     padding: 0 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* ПО pixel perfect получилось 0,91 по идее 1fr */
+    grid-template-columns: 1fr 0.91fr 1fr; 
   }
 
 
@@ -343,6 +356,7 @@ img {
   }
 
   .section_pics {
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4, min-content);
     grid-template-areas:
     "pics-title pics-title pics-title"
@@ -392,6 +406,11 @@ img {
   }
   .header__theme-menu-list {
     display: flex;
+    gap: 10px;
+  }
+
+  .section {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .section-causes .content_labels-of-section {
