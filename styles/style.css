@@ -21,7 +21,9 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  display: inline-block;
+  border-bottom: 1px solid var(--text-color);
+  line-height: 18px;
 }
 
 a:focus {
@@ -130,7 +132,6 @@ a:focus-visible {
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--buttons-color);
-  outline: none;
 }
 
 .header__theme-menu-button_active {
@@ -186,7 +187,7 @@ section {
   margin-block-start: 50px;
 }
 
-.one-paragraph {
+.section_paragraph {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -246,7 +247,8 @@ img {
   align-items: center;
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   padding: 10px;
 }
 
@@ -409,7 +411,7 @@ img {
     gap: 10px;
   }
 
-  .section {
+  section {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
